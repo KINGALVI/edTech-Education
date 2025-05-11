@@ -20,4 +20,5 @@ Pro Edu is a **modern, responsive online learning platform** designed to provide
 
 ## 📂 Project Structure
 
-git clone <https://github.com/KINGALVI/edTech-Education>
+```plaintext
+git clone https://github.com/KINGALVI/ProEdu.git

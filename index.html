@@ -19,7 +19,12 @@
   <!-- Imports Bootstrap's bundled JavaScript file, including popper.js for tooltips and dropdowns -->
 
   <header>
-    <!-- Header section that contains the navigation bar and carousel -->
+    <!-- Header section providing navigation and branding.
+         - `bg-primary`: Sets the header background to Bootstrap’s primary color.
+         - `d-flex`: Uses CSS Flexbox for dynamic alignment.
+         - `align-items-center`: Vertically centers the elements within the header.
+         - `justify-content-between`: Distributes elements across the header, placing them at opposite ends.
+         - `p-3`: Adds padding to maintain proper spacing inside the header. -->
 
     <section class="container mt-2">
       <!-- Bootstrap container to ensure responsiveness -->
@@ -127,6 +132,7 @@
       </nav>
     </section>
 
+
     <section class="container" style="margin-top: 15vh; margin-bottom: 15vh;">
       <!-- Section for the carousel display, ensuring margin spacing -->
 
@@ -137,45 +143,135 @@
           <!-- Container for carousel items -->
 
           <div class="carousel-item active">
-            <!-- First slide: Python Development course -->
+            <!-- This is the first slide in the Bootstrap carousel.
+                 - `carousel-item`: Defines an individual slide within the carousel.
+                 - `active`: Specifies that this slide is initially displayed when the carousel loads. -->
 
             <img src="Project-Design-&-Image/images/cover/cover-1.png" class="d-block w-100 img-fluid"
               style="Height:632px; Width:170px;" alt="Python Learning">
+            <!-- Course image for the first slide:
+                 - `d-block`: Ensures the image is displayed as a block element.
+                 - `w-100`: Makes the image stretch to the full width of its container.
+                 - `img-fluid`: Ensures the image scales properly on different screen sizes.
+                 - `style="Height:632px; Width:170px;"`: Defines the height and width.
+                 - `alt="Python Learning"`: Provides alternative text for accessibility. -->
+
             <div class="carousel-caption d-block d-md-block" style="margin-bottom: 25vh;">
+              <!-- Caption overlay for the slide:
+                   - `carousel-caption`: Positions text over the image.
+                   - `d-block`: Ensures the caption is visible.
+                   - `d-md-block`: Allows the caption to be visible on medium screens and larger.
+                   - `style="margin-bottom: 25vh;"`: Creates vertical spacing below the caption to improve readability. -->
+
               <h1 class="text-dark"><strong>Get Started With Python Development Learning</strong></h1>
-              <p class="text-dark">Python is a high-level, interpreted programming language known for readability and
-                efficiency.</p>
-              <button class="btn btn-outline-dark p-3" type="submit"><strong class="fs-4">Get Started</strong></button>
+              <!-- Main heading within the caption:
+                   - `<h1>`: Large heading for clear emphasis.
+                   - `text-dark`: Ensures the text appears in a dark color for contrast.
+                   - `<strong>`: Makes the text bold for better readability. -->
+
+              <p class="text-dark">
+                <!-- Course description text:
+                     - `<p>`: Paragraph element for description.
+                     - `text-dark`: Ensures readability by using a dark font color. -->
+                Python is a high-level, interpreted programming language known for readability and efficiency.
+              </p>
+
+              <!-- Call-to-action button of Get Started -->
+              <button class="btn btn-outline-dark p-3" type="submit">
+                <strong class="fs-4">Get Started</strong>
+              </button>
+
             </div>
           </div>
 
+
           <div class="carousel-item">
-            <!-- Second slide: Website Development course -->
+            <!-- This is the Second slide in the Bootstrap carousel.
+                 - `carousel-item`: Specifies this element as a slide in the carousel.
+                 - Each slide contains an image and associated text. -->
 
             <img src="Project-Design-&-Image/images/cover/cover-2.jpg" class="d-block w-100 img-fluid"
               style="Height:632px; Width:170px;" alt="Web Development Learning">
+            <!-- Course image for the second slide:
+                 - `d-block`: Ensures the image behaves as a block-level element.
+                 - `w-100`: Expands the image to fill the entire width of its container.
+                 - `img-fluid`: Makes the image responsive and scales appropriately.
+                 - `style="Height:632px; Width:170px;"`: Explicitly sets the height and width of the image.
+                 - `alt="Web Development Learning"`: Alternative text for accessibility and SEO purposes. -->
+
             <div class="carousel-caption d-block d-md-block" style="margin-bottom: 22vh;">
+              <!-- Caption overlay for the slide:
+                   - `carousel-caption`: Positions descriptive text over the image.
+                   - `d-block`: Ensures visibility across all screen sizes.
+                   - `d-md-block`: Shows the caption only on medium and larger screens.
+                   - `style="margin-bottom: 22vh;"`: Adds spacing below the caption for better readability. -->
+
               <h1 class="text-dark"><strong>Get Started With Website Development Learning</strong></h1>
-              <p class="text-dark"><strong>Web development involves creating websites from simple static pages to
-                  complex applications.</strong></p>
-              <button class="btn btn-outline-dark border-dark p-3" type="submit"><strong class="fs-4">Get
-                  Started</strong></button>
+              <!-- Heading inside the caption:
+                   - `<h1>`: Large heading for clear emphasis.
+                   - `text-dark`: Ensures readability by applying a dark font color.
+                   - `<strong>`: Makes the text bold for better visibility and emphasis. -->
+
+              <p class="text-dark">
+                <!-- Course description for web development:
+                     - `<p>`: Defines a paragraph for structured text.
+                     - `text-dark`: Ensures a dark color for readability. -->
+                <strong>
+                  Web development involves creating websites from simple static pages to complex applications.
+                </strong>
+              </p>
+
+              <!-- Call-to-action button of Get Started -->
+              <button class="btn btn-outline-dark border-dark p-3" type="submit">
+                <strong class="fs-4">Get Started</strong>
+              </button>
+
             </div>
           </div>
 
+
           <div class="carousel-item">
-            <!-- Third slide: Data Management course -->
+            <!-- This is the Third slide in the Bootstrap carousel.
+                 - `carousel-item`: Specifies that this is a single slide in the carousel.
+                 - This slide contains an image and associated text. -->
 
             <img src="Project-Design-&-Image/images/cover/cover-3.jpg" class="d-block w-100"
               style="Height:632px; Width:170px;" alt="Data Management Learning">
+            <!-- Slide image representing the Data Management course:
+                 - `d-block`: Ensures the image behaves as a block-level element.
+                 - `w-100`: Expands the image to take up the full width of its container.
+                 - `style="Height:632px; Width:170px;"`: Explicitly defines the image dimensions.
+                 - `alt="Data Management Learning"`: Provides alternative text for accessibility and SEO improvement. -->
+
             <div class="carousel-caption d-block d-md-block" style="margin-bottom: 12vh;">
+              <!-- Caption overlay for the slide:
+                   - `carousel-caption`: Positions text overlaying the image.
+                   - `d-block`: Ensures the caption is visible on all screen sizes.
+                   - `d-md-block`: Ensures the caption is visible only on medium screens and larger.
+                   - `style="margin-bottom: 12vh;"`: Adjusts the caption’s vertical positioning for better spacing. -->
+
               <h1 class="text-dark"><strong>Get Started With Data Management Learning</strong></h1>
-              <p class="text-dark"><strong>Data management ensures secure, efficient, and cost-effective handling of
-                  data assets.</strong></p>
-              <button class="btn btn-outline-dark p-3" type="submit"><strong class="fs-4">Get Started</strong></button>
+              <!-- Main heading within the caption:
+                   - `<h1>`: Large heading for strong emphasis.
+                   - `text-dark`: Ensures readability by applying a dark font color.
+                   - `<strong>`: Makes the text bold for added emphasis. -->
+
+              <p class="text-dark">
+                <!-- Description of the Data Management course:
+                     - `<p>`: Defines a paragraph for structured text.
+                     - `text-dark`: Maintains a dark font color for contrast. -->
+                <strong>Data management ensures secure, efficient, and cost-effective handling of data assets.</strong>
+              </p>
+
+              <!-- Call-to-action button of Get Started -->
+              <button class="btn btn-outline-dark p-3" type="submit">
+                <strong class="fs-4">Get Started</strong>
+              </button>
+
             </div>
           </div>
         </div>
+
 
         <!-- Previous Button -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -190,16 +286,31 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+
       </div>
+
     </section>
+
 
   </header>
 
+
+
   <main>
+    <!-- Main section providing central content display.
+         - `container-fluid`: Allows the section to span the full width of the viewport.
+         - `d-flex`: Uses Flexbox for dynamic alignment.
+         - `flex-column`: Arranges elements in a vertical stack.
+         - `align-items-center`: Centers elements horizontally.
+         - `justify-content-center`: Centers elements vertically.
+         - `bg-light`: Sets a light background for readability.
+         - `p-5`: Adds padding for better spacing.
+         - `style="min-height: 80vh;"`: Defines the minimum height of the section to occupy 80% of the viewport. -->
+
+
 
     <section class="container">
       <!-- This section container ensuring responsiveness and proper layout -->
-
 
       <center>
         <!-- Centers the content horizontally, ensuring a structured and visually appealing layout -->
@@ -290,12 +401,9 @@
                       <h5 class="text-primary"><strong>Price: $20</strong></h5>
                       <!-- Displays the price in a primary text color (`text-primary`) for visibility. -->
 
+                      <!-- Purchase button -->
                       <button class="btn btn-outline-primary pe-3 ps-3 mt-2 mb-2"><strong>Buy This
                           Course</strong></button>
-                      <!-- Purchase button styled with:
-                           - `btn-outline-primary`: Applies a bordered primary-colored button.
-                           - `pe-3 ps-3`: Adds padding to the left and right.
-                           - `mt-2 mb-2`: Adds top and bottom margin for spacing. -->
 
                       <p class="card-text"><small class="text-muted"><strong>Last updated 3 mins ago</strong></small>
                       </p>
@@ -356,12 +464,9 @@
                       <h5 class="text-primary"><strong>Price: $20</strong></h5>
                       <!-- Displays the price in primary text color (`text-primary`) for visibility. -->
 
+                      <!-- Purchase button -->
                       <button class="btn btn-outline-primary pe-3 ps-3 mt-2 mb-2"><strong>Buy This
                           Course</strong></button>
-                      <!-- Purchase button styled with:
-                           - `btn-outline-primary`: Applies a bordered primary-colored button.
-                           - `pe-3 ps-3`: Adds padding to the left and right for consistent spacing.
-                           - `mt-2 mb-2`: Adds top and bottom margin for visual separation. -->
 
                       <p class="card-text"><small class="text-muted"><strong>Last updated 3 mins ago</strong></small>
                       </p>
@@ -423,12 +528,9 @@
                       <h5 class="text-primary"><strong>Price: $20</strong></h5>
                       <!-- Displays the course price, using `text-primary` to make it stand out with a blue color. -->
 
+                      <!-- Purchase button -->
                       <button class="btn btn-outline-primary pe-3 ps-3 mt-2 mb-2"><strong>Buy This
                           Course</strong></button>
-                      <!-- CTA button styled with:
-                           - `btn-outline-primary`: Applies a bordered primary-colored button.
-                           - `pe-3 ps-3`: Adds padding on both sides for better spacing.
-                           - `mt-2 mb-2`: Adds top and bottom margins to visually separate the button. -->
 
                       <p class="card-text"><small class="text-muted"><strong>Last updated 3 mins ago</strong></small>
                       </p>
@@ -489,12 +591,9 @@
                       <h5 class="text-primary"><strong>Price: $20</strong></h5>
                       <!-- Displays the price using Bootstrap's primary color (`text-primary`) for visibility. -->
 
+                      <!-- Purchase button -->
                       <button class="btn btn-outline-primary pe-3 ps-3 mt-2 mb-2"><strong>Buy This
                           Course</strong></button>
-                      <!-- CTA button styled with:
-                           - `btn-outline-primary`: Applies a bordered primary-colored button.
-                           - `pe-3 ps-3`: Adds padding to the left and right for consistent spacing.
-                           - `mt-2 mb-2`: Adds top and bottom margins for separation. -->
 
                       <p class="card-text"><small class="text-muted"><strong>Last updated 3 mins ago</strong></small>
                       </p>
@@ -555,12 +654,9 @@
                       <h5 class="text-primary"><strong>Price: $20</strong></h5>
                       <!-- Displays the price using Bootstrap's primary color (`text-primary`) for visibility. -->
 
+                      <!-- Purchase button -->
                       <button class="btn btn-outline-primary pe-3 ps-3 mt-2 mb-2"><strong>Buy This
                           Course</strong></button>
-                      <!-- CTA button styled with:
-                           - `btn-outline-primary`: Applies a bordered primary-colored button.
-                           - `pe-3 ps-3`: Adds padding to the left and right for consistent spacing.
-                           - `mt-2 mb-2`: Adds top and bottom margins for separation. -->
 
                       <p class="card-text"><small class="text-muted"><strong>Last updated 3 mins ago</strong></small>
                       </p>
@@ -622,12 +718,9 @@
                       <h5 class="text-primary"><strong>Price: $20</strong></h5>
                       <!-- Displays the course price using Bootstrap's primary color (`text-primary`) for prominence. -->
 
+                      <!-- Purchase button -->
                       <button class="btn btn-outline-primary pe-3 ps-3 mt-2 mb-2"><strong>Buy This
                           Course</strong></button>
-                      <!-- Call-to-action button styled with:
-                           - `btn-outline-primary`: Creates a bordered button in primary color.
-                           - `pe-3 ps-3`: Adds left and right padding for consistency.
-                           - `mt-2 mb-2`: Adds top and bottom margins for separation. -->
 
                       <p class="card-text"><small class="text-muted"><strong>Last updated 3 mins ago</strong></small>
                       </p>
@@ -665,46 +758,92 @@
 
 
     <section class="container mt-5 mb-5 shadow-lg p-3 mb-5 rounded">
+      <!-- This section container providing a structured and responsive layout.
+           - `container`: Ensures the section scales properly across different screen sizes.
+           - `mt-5 mb-5`: Adds top (`mt-5`) and bottom (`mb-5`) margin for spacing.
+           - `shadow-lg`: Adds a large shadow effect to give a professional look.
+           - `p-3`: Adds padding to create space inside the section.
+           - `rounded`: Applies smooth, rounded edges for a refined appearance. -->
+
       <div class="card mb-3 border-0" style="max-width: 2000px;">
+        <!-- Bootstrap card component:
+             - `mb-3`: Bottom margin for spacing between sections.
+             - `border-0`: Removes the default border for a clean design.
+             - `max-width: 2000px`: Ensures the card has a wide layout for larger screens. -->
+
         <div class="row g-0">
+          <!-- Bootstrap row structure ensuring elements align properly.
+               - `g-0`: Removes default spacing between columns to maintain a compact layout. -->
+
           <div class="col-md-4">
-            <img src="Project-Design-&-Image/images/working.png" class=" img-fluid rounded-start" alt="...">
+            <!-- Column that occupies one-third (`col-md-4`) of the available width. Used for displaying an image alongside text. -->
+
+            <img src="Project-Design-&-Image/images/working.png" class="img-fluid rounded-start"
+              alt="Programming Community">
+            <!-- Course image with:
+                 - `img-fluid`: Makes the image responsive to scale with screen sizes.
+                 - `rounded-start`: Ensures smooth rounded edges on the left side.
+                 - `alt="Programming Community"`: Alternative text for accessibility and SEO improvement. -->
           </div>
+
           <div class="col-md-8">
+            <!-- Column that occupies two-thirds (`col-md-8`) of the available width. Used for containing the text content. -->
+
             <div class="card-body">
+              <!-- Card body for organizing content within the card. -->
+
               <h1 class="card-title"><strong>Explore Thish Programming Community Institute</strong></h1>
+              <!-- Heading introducing the section with strong emphasis on learning opportunities. `<strong>` ensures bold formatting for better visibility. -->
+
               <br>
-              <p class="card-text">If tech is a gold mine, Computer Science is your shovel. Fortunately, this Path
-                teaches you college-level fundamentals, so you can start thinking and coding like a professional in no
-                time.
+
+              <p class="card-text">
+                <!-- Paragraph providing details about the programming path and its benefits. -->
+                If tech is a gold mine, Computer Science is your shovel.
+                Fortunately, this Path teaches you college-level fundamentals, so you can start thinking and coding like
+                a professional in no time.
+              </p>
+
               <ul>
+                <!-- Unordered list presenting the main learning goals. -->
                 You will:
                 <br><br>
-                <li>Learn Python, Command Line, Git, Data Structures, and more .</li>
+                <li>Learn Python, Command Line, Git, Data Structures, and more.</li>
                 <br>
-                <li>Understand how to write super-efficient code .</li>
+                <li>Understand how to write super-efficient code.</li>
                 <br>
-                <li>Problem-solve like a pro .</li>
+                <li>Problem-solve like a pro.</li>
                 <br>
-                <li>Build a professional portfolio .</li>
+                <li>Build a professional portfolio.</li>
               </ul>
-              </p>
+
               <br>
+
               <div class="d-flex">
+                <!-- Flexbox container for organizing statistics horizontally. -->
+
                 <span class="me-4">
+                  <!-- First statistic box representing the number of online courses. - `me-4`: Adds right margin for spacing. -->
                   <h1><strong>3.2K+</strong></h1>
                   <p><strong><small>Online Course</small></strong></p>
                 </span>
+
                 <span class="me-4">
+                  <!-- Second statistic box representing expert members. -->
                   <h1><strong>600+</strong></h1>
                   <p><strong><small>Expert member</small></strong></p>
                 </span>
+
                 <span>
+                  <!-- Third statistic box representing ratings and reviews. -->
                   <h1><strong>1k+</strong></h1>
                   <p><strong>Rating & Review</strong></p>
                 </span>
               </div>
+
               <br>
+
+              <!-- Call-to-action button encouraging users to explore further details. -->
               <button class="btn btn-outline-primary pe-5 ps-5"><strong>Read More</strong></button>
             </div>
           </div>
@@ -712,53 +851,142 @@
       </div>
     </section>
 
+
     <section class="container-fluid bg-primary w-75 shadow-lg p-3 mb-5 rounded">
+      <!-- This section container providing full-width responsiveness.
+           - `container-fluid`: Allows the section to span the entire width of the viewport.
+           - `bg-primary`: Applies a primary color background (usually blue in Bootstrap).
+           - `w-75`: Limits the width to 75% of the viewport for better centered alignment.
+           - `shadow-lg`: Adds a large shadow effect for depth.
+           - `p-3`: Adds padding inside the section for spacing.
+           - `mb-5`: Bottom margin to separate from the next section.
+           - `rounded`: Applies smooth, rounded edges for aesthetics. -->
+
       <center>
+        <!-- Centers the content horizontally for better readability. -->
+
         <div class="d-flex justify-content-between align-items-center">
+          <!-- Flexbox container for structured alignment.
+               - `d-flex`: Enables a flexible layout for child elements.
+               - `justify-content-between`: Positions child elements at opposite ends, creating space between them.
+               - `align-items-center`: Ensures vertical centering of elements within the flex container. -->
+
           <div class="w-75 me-2">
+            <!-- Text container occupying 75% of the available width.
+                 - `me-2`: Adds right margin for spacing between elements. -->
+
             <h1 class="text-white"><strong>Ready to join?</strong></h1>
-            <p class="text-white"><strong>We help organizations of all types and sizes prepare for the path ahead —
-                wherever it leads. Our curated collection of business and technical courses help companies,
+            <!-- Main heading for the section.
+                 - `<h1>`: Defines the heading with large font size.
+                 - `text-white`: Applies white text color for contrast against the blue background.
+                 - `<strong>`: Makes the text bold for emphasis. -->
+
+            <p class="text-white">
+              <!-- Description text explaining the purpose of the courses.
+                   - `<p>`: Defines paragraph text.
+                   - `text-white`: Ensures readability by using white text color against the background. -->
+
+              <strong>
+                We help organizations of all types and sizes prepare for the path ahead—wherever it leads.
+                Our curated collection of business and technical courses help companies,
                 governments, and nonprofits go further by placing learning at the center of their strategies.
-              </strong></p>
+              </strong>
+              <!-- Highlights the importance of education in professional growth and development. -->
+            </p>
           </div>
-          <div class=""><button type="button" class="btn btn-light text-primary rounded"><strong>Register
-                Now</strong></button>
+
+          <div>
+            <!-- Call-to-action button encouraging users to register. -->
+            <button type="button" class="btn btn-light text-primary rounded">
+              <strong>Register Now</strong>
+            </button>
           </div>
+
         </div>
+
+      </center>
+
     </section>
+
+
     <section class="container mb-5">
+      <!-- This section containing a responsive container.
+           - `container`: Ensures structured layout and responsiveness.
+           - `mb-5`: Adds bottom margin for spacing between sections. -->
+
       <center>
-        <h1><strong>Meet Our Successfull Students</strong></h1>
+        <!-- Centers all content horizontally for a balanced design. -->
+
+        <h1><strong>Meet Our Successful Students</strong></h1>
+        <!-- Section heading:
+             - `<h1>`: Large heading to emphasize the section title.
+             - `<strong>`: Makes the text bold for visibility. -->
+
         <br>
-        <p class="w-50 text-muted"><strong>It is a long established fact that a reader will be distracted by the
-            readable contentp of a page when he or she looking
-            the Success rate of our course so we show here some of our Successfull student portfolio !</strong></p>
+
+        <p class="w-50 text-muted">
+          <!-- Section description explaining student portfolios.
+               - `w-50`: Restricts width to 50% for readability on larger screens.
+               - `text-muted`: Applies a muted text color for subtle contrast. 
+               - `<strong>`: Highlights the text for better visibility. -->
+
+          <strong>
+            It is a long-established fact that a reader will be distracted by the
+            readable content of a page when he or she is looking at the success rate of our course.
+            So, we showcase some of our successful student portfolios!
+          </strong>
+
+        </p>
+
         <br>
+
         <div class="row d-flex">
+          <!-- Flexbox container aligning student cards in a row.
+               - `row`: Creates a Bootstrap grid row for alignment.
+               - `d-flex`: Enables flexible row layout for responsiveness. -->
+
+          <!-- STUDENT CARD 1: Awlad Hossain (UI/UX Designer) -->
           <div class="col">
+            <!-- Column container ensuring equal-width student cards. -->
+
             <div class="card shadow-lg p-3 mb-5 rounded border-0">
-              <img src="Project-Design-&-Image/images/student/student-1.png" class="card-img-top" alt="...">
+              <!-- Bootstrap card component:
+                   - `shadow-lg`: Adds a large shadow for modern styling.
+                   - `p-3`: Adds padding inside the card for spacing.
+                   - `mb-5`: Adds bottom margin for separation.
+                   - `rounded`: Applies rounded corners.
+                   - `border-0`: Removes default borders for a clean appearance. -->
+
+              <img src="Project-Design-&-Image/images/student/student-1.png" class="card-img-top" alt="UI/UX Designer">
+              <!-- Student image:
+                   - `card-img-top`: Positions the image at the top of the card.
+                   - `alt`: Provides alternative text for accessibility. -->
+
               <div class="card-body">
+                <!-- Card body containing student details. -->
+
                 <h5 class="card-title"><strong>Awlad Hossain</strong></h5>
-                <p class="card-text text-muted"><strong>UIUX Designer</strong></p>
+                <p class="card-text text-muted"><strong>UI/UX Designer</strong></p>
               </div>
             </div>
           </div>
 
+          <!-- STUDENT CARD 2: Jannatul Islam (Motion Designer) -->
           <div class="col">
             <div class="card shadow-lg p-3 mb-5 rounded border-0">
-              <img src="Project-Design-&-Image/images/student/student-2.png" class="card-img-top" alt="...">
+              <img src="Project-Design-&-Image/images/student/student-2.png" class="card-img-top" alt="Motion Designer">
               <div class="card-body">
                 <h5 class="card-title"><strong>Jannatul Islam</strong></h5>
-                <p class="card-text text-muted"><strong>Motion Design</strong></p>
+                <p class="card-text text-muted"><strong>Motion Designer</strong></p>
               </div>
             </div>
           </div>
 
+          <!-- STUDENT CARD 3: Imran Hossain (Graphic Designer) -->
           <div class="col">
-            <div class="card shadow-lg p-3  mb-5 rounded border-0">
-              <img src="Project-Design-&-Image/images/student/student-3.png" class="card-img-top" alt="...">
+            <div class="card shadow-lg p-3 mb-5 rounded border-0">
+              <img src="Project-Design-&-Image/images/student/student-3.png" class="card-img-top"
+                alt="Graphic Designer">
               <div class="card-body">
                 <h5 class="card-title"><strong>Imran Hossain</strong></h5>
                 <p class="card-text text-muted"><strong>Graphic Designer</strong></p>
@@ -766,9 +994,10 @@
             </div>
           </div>
 
+          <!-- STUDENT CARD 4: Nishi Akter (Web Developer) -->
           <div class="col">
             <div class="card shadow-lg p-3 mb-5 rounded border-0">
-              <img src="Project-Design-&-Image/images/student/student-4.png" class="card-img-top" alt="...">
+              <img src="Project-Design-&-Image/images/student/student-4.png" class="card-img-top" alt="Web Developer">
               <div class="card-body">
                 <h5 class="card-title"><strong>Nishi Akter</strong></h5>
                 <p class="card-text text-muted"><strong>Web Developer</strong></p>
@@ -776,262 +1005,643 @@
             </div>
           </div>
 
+          <!-- VIEW ALL BUTTON -->
           <div>
-            <button type="button" class="btn btn-outline-primary rounded ps-4 pe-4 "><strong>View
-                All</strong></button>
+            <button type="button" class="btn btn-outline-primary rounded ps-4 pe-4">
+              <strong>View All</strong>
+            </button>
           </div>
+
         </div>
+
       </center>
+
     </section>
 
+
     <section class="container">
+      <!-- This section containing student feedback.
+       - `container`: Ensures structured layout and responsiveness.
+       - Allows proper spacing and alignment within the webpage. -->
+
       <center>
+        <!-- Centers all content horizontally for better readability and visual balance. -->
+
         <h1><strong>Some Students Feedback</strong></h1>
-        <p class="text-muted w-50"><strong>
-            Whether you want to learn or to share what you know, you’ve come to the
-            right place. As a global destination for online learning, we connect people through knowledge.</strong>
+        <!-- Section heading:
+         - `<h1>`: Large heading for emphasis.
+         - `<strong>`: Makes the text bold for better visibility. -->
+
+        <p class="text-muted w-50">
+          <!-- Section description explaining the purpose of feedback.
+           - `w-50`: Limits width to 50% for readability.
+           - `text-muted`: Applies a subtle gray color for softer contrast. -->
+          <strong>
+            Whether you want to learn or to share what you know, you’ve come to the right place.
+            As a global destination for online learning, we connect people through knowledge.
+          </strong>
         </p>
       </center>
-      <br>
-      <br>
+
+      <br><br>
+
       <div class="d-flex justify-content-between">
-        <div style="width:35vw ;">
-          <span class="d-flex justify-content-between"><span><img class="mb-3"
-                src="Project-Design-&-Image/images/comma.png" alt=""> </span>
+        <!-- Flexbox container aligning feedback boxes side by side.
+             - `d-flex`: Enables flexible layout for responsiveness.
+             - `justify-content-between`: Ensures maximum spacing between items. -->
+
+        <!-- FIRST STUDENT FEEDBACK CARD -->
+        <div style="width:35vw;">
+          <!-- Feedback card container with width set to 35% of the viewport (`35vw`). -->
+
+          <span class="d-flex justify-content-between">
+            <!-- Flex container aligning quotation image and star rating horizontally. -->
+
             <span>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <img class="mb-3" src="Project-Design-&-Image/images/comma.png" alt="Quote Symbol">
+              <!-- Quotation image to indicate a testimonial.
+                   - `mb-3`: Adds bottom margin for spacing.
+                   - `alt="Quote Symbol"`: Provides accessibility description for screen readers. -->
             </span>
+
+            <span>
+              <!-- Star rating icons to visually represent student satisfaction. -->
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <!-- Displays 4 full stars and 1 half star to show a near-perfect rating. -->
+            </span>
+
           </span>
-          <p class="text-muted text-center w-100"><strong>Pro Edu fit us like a glove. Their team curates fresh,
-              up-to-date courses from their marketplace and makes them available to customers.In total, it was a big
-              success, I would get emails about what a fantastic resource it was.</strong>
+
+          <p class="text-muted text-center w-100">
+            <!-- Student feedback text:
+                 - `text-muted`: Ensures softer contrast for readability.
+                 - `text-center`: Centers the text horizontally.
+                 - `w-100`: Expands the paragraph width fully inside its container. -->
+            <strong>
+              Pro Edu fit us like a glove. Their team curates fresh, up-to-date courses from their marketplace
+              and makes them available to customers. In total, it was a big success,
+              I would get emails about what a fantastic resource it was.
+            </strong>
           </p>
-          <div class="d-flex justify-content-center"><img class="mt-3"
-              src="Project-Design-&-Image/images/student/student-5.png" class="img-fluid" alt="">
+
+          <div class="d-flex justify-content-center">
+            <!-- Center-aligned container for student profile image. -->
+            <img class="mt-3" src="Project-Design-&-Image/images/student/student-5.png" class="img-fluid"
+              alt="Student Feedback">
+            <!-- Student image:
+                 - `mt-3`: Adds top margin for spacing.
+                 - `img-fluid`: Ensures responsiveness for different screen sizes.
+                 - `alt="Student Feedback"`: Improves accessibility for screen readers. -->
+          </div>
+
+        </div>
+
+        <!-- SECOND STUDENT FEEDBACK CARD -->
+        <div style="width:35vw;">
+          <!-- Feedback card container with width set to 35% of the viewport (`35vw`). -->
+
+          <span class="d-flex justify-content-between">
+            <!-- Flex container aligning quotation image and star rating horizontally. -->
+
+            <span>
+              <img class="mb-3" src="Project-Design-&-Image/images/comma.png" alt="Quote Symbol">
+              <!-- Quotation image to indicate a testimonial.
+                   - `mb-3`: Adds bottom margin for spacing.
+                   - `alt="Quote Symbol"`: Provides accessibility description for screen readers. -->
+            </span>
+
+            <span>
+              <!-- Star rating icons to visually represent student satisfaction. -->
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <!-- Displays 4 full stars and 1 half star to show a near-perfect rating. -->
+            </span>
+
+          </span>
+
+          <p class="text-muted text-center w-100">
+            <!-- Student feedback text:
+                 - `text-muted`: Ensures softer contrast for readability.
+                 - `text-center`: Centers the text horizontally.
+                 - `w-100`: Expands the paragraph width fully inside its container. -->
+            <strong>
+              Pro Edu responds to the needs of the business in an agile and global manner.
+              It’s truly the best solution for our employees and their careers. In total, it was a
+              big success, I would get emails about what a fantastic resource it was.
+            </strong>
+          </p>
+
+          <div class="d-flex justify-content-center">
+            <!-- Center-aligned container for student profile image. -->
+            <img class="mt-3" src="Project-Design-&-Image/images/student/student-6.png" class="img-fluid"
+              alt="Student Feedback">
+            <!-- Student image:
+                 - `mt-3`: Adds top margin for spacing.
+                 - `img-fluid`: Ensures responsiveness for different screen sizes.
+                 - `alt="Student Feedback"`: Improves accessibility for screen readers. -->
           </div>
         </div>
 
-        <div style="width:35vw;">
-          <span class="d-flex justify-content-between"><span><img class="mb-3"
-                src="Project-Design-&-Image/images/comma.png" alt=""> </span>
-            <span>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
-            </span>
-          </span>
-          <p class="text-muted text-center w-100"><strong> Pro Edu responds to the needs of the business in an agile
-              and global manner. It’s truly the best solution for our employees and their careers. In total, it was a
-              big success, I would get emails about what a fantastic resource it was.</strong>
-          </p>
-          <div class="d-flex justify-content-center"><img class="mt-3"
-              src="Project-Design-&-Image/images/student/student-6.png" class="img-fluid" alt="">
-          </div>
-        </div>
       </div>
+
     </section>
+
     <br>
     <br>
+
     <center>
+      <!-- Centers the content horizontally, ensuring a structured and visually appealing layout. -->
+
       <div>
+        <!-- Wrapper div for better organization and alignment. -->
+
         <h1><strong>Frequently Asked Questions</strong></h1>
+        <!-- Section heading:
+             - `<h1>`: Defines a large heading for emphasis.
+             - `<strong>`: Makes the text bold for better visibility.
+             - Clearly states the section is dedicated to FAQs. -->
+
         <br>
-        <p class="text-muted w-50"><strong>It is a long established fact that a reader will be distracted by the
-            readable content of a page when looking at its layout.</strong></p>
+        <!-- Line break for spacing and visual separation between heading and description. -->
+
+        <p class="text-muted w-50">
+          <!-- Paragraph providing an introduction to the FAQ section:
+               - `text-muted`: Uses a softer gray color to subtly contrast with the background.
+               - `w-50`: Restricts the paragraph width to 50% of the container to maintain readability on larger screens. -->
+
+          <strong>
+            It is a long-established fact that a reader will be distracted by the readable content of a page
+            when looking at its layout.
+          </strong>
+          <!-- Explanation highlighting the importance of structured page content.
+               - `<strong>`: Ensures the text appears bold to enhance emphasis. -->
+        </p>
+
       </div>
+
     </center>
+
     <br>
+
     <section class="container">
+      <!-- This section containing the FAQ accordion component.
+           - `container`: Ensures structured layout and responsiveness.
+           - Helps keep the accordion well-aligned with the page structure. -->
+
       <div class="accordion" id="accordionExample">
+        <!-- Bootstrap accordion component for collapsible content.
+             - `accordion`: Initializes the accordion behavior.
+             - `id="accordionExample"`: Unique ID to group collapsible items within the accordion. -->
+
+
         <div class="accordion-item">
+          <!-- Defines an individual accordion item. - Each item consists of a header (`accordion-header`), a button (`accordion-button`), and collapsible content (`accordion-collapse`). -->
+
           <h2 class="accordion-header" id="headingOne">
+            <!-- Accordion header containing the interactive button.
+                 - `<h2>`: Defines section hierarchy for accessibility.
+                 - `id="headingOne"`: Unique ID that connects to the collapsible content for accessibility. -->
+
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
               aria-expanded="true" aria-controls="collapseOne">
+              <!-- Button to expand/collapse the accordion content.
+                   - `accordion-button`: Bootstrap class for accordion behavior.
+                   - `type="button"`: Defines the element as a button.
+                   - `data-bs-toggle="collapse"`: Specifies the action to toggle the collapse.
+                   - `data-bs-target="#collapseOne"`: Links the button to the collapsible content.
+                   - `aria-expanded="true"`: Indicates the current state (expanded or collapsed) for accessibility.
+                   - `aria-controls="collapseOne"`: Provides accessibility by associating the button with collapsible content. -->
+
               <h4><strong>Difference Between Flexbox and Grid !</strong></h4>
+              <!-- Accordion title displayed inside the button.
+                   - `<h4>`: Defines a medium heading for better readability.
+                   - `<strong>`: Makes the title bold for emphasis. -->
             </button>
           </h2>
+
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
             data-bs-parent="#accordionExample">
+            <!-- Collapsible content of the accordion item.
+                 - `id="collapseOne"`: Unique ID linking to the button.
+                 - `accordion-collapse collapse show`: 
+                     - `collapse`: Hides the content initially unless toggled.
+                     - `show`: Ensures this specific section is displayed by default.
+                 - `aria-labelledby="headingOne"`: Associates the collapse section with the header for accessibility.
+                 - `data-bs-parent="#accordionExample"`: Ensures only one section expands at a time within the accordion group.-->
+
             <div class="accordion-body">
-              <p><strong>The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was
-                  designed for layout in one dimension - either a row or a column.</strong> Grid was designed for
-                two-dimensional <code>layout - rows, and columns</code> at the same time. The two specifications share
-                some common features, however, and if you have already learned how to use flexbox, the similarities
-                should help you get to grips with Grid.</p>
+              <!-- Container for accordion body content. - Provides a structured space for text within the collapsible section.-->
+
+              <p>
+                <!-- Paragraph explaining the difference between Flexbox and Grid in CSS. -->
+                <strong>
+                  The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was
+                  designed for layout in one dimension—either a row or a column.
+                </strong>
+                <!-- Highlights the key distinction between Flexbox and Grid. -->
+
+                Grid was designed for two-dimensional
+                <code>layout - rows, and columns</code> at the same time.
+                <!-- Uses `<code>` to style "layout - rows, and columns" as programming terminology. -->
+
+                The two specifications share some common features, however, and if you have already learned how to use
+                flexbox,
+                the similarities should help you get to grips with Grid.
+                <!-- Additional information explaining how Flexbox knowledge makes learning Grid easier. -->
+              </p>
             </div>
           </div>
         </div>
+
+
         <div class="accordion-item">
+          <!-- Defines an individual accordion item for comparison between Bootstrap and Tailwind CSS. - Each item includes a header (`accordion-header`), a button (`accordion-button`), and collapsible content (`accordion-collapse`). -->
+
           <h2 class="accordion-header" id="headingTwo">
+            <!-- Accordion header containing the interactive button.
+                 - `<h2>`: Defines section hierarchy for accessibility.
+                 - `id="headingTwo"`: Unique ID that connects to the collapsible content for accessibility. -->
+
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <!-- Button to expand/collapse the accordion content.
+                   - `accordion-button collapsed`: Applies Bootstrap's collapsed state by default.
+                   - `type="button"`: Defines the element as a button.
+                   - `data-bs-toggle="collapse"`: Specifies the action to toggle the collapse.
+                   - `data-bs-target="#collapseTwo"`: Links the button to the collapsible content.
+                   - `aria-expanded="false"`: Indicates the initial state (collapsed) for accessibility.
+                   - `aria-controls="collapseTwo"`: Provides accessibility by associating the button with collapsible content. -->
+
               <h4 class="strong"><strong>Comparison Between Bootstrap Tailwind !</strong></h4>
+              <!-- Accordion title displayed inside the button.
+                   - `<h4>`: Defines a medium heading for readability.
+                   - `<strong>`: Makes the title bold for emphasis. -->
             </button>
           </h2>
+
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <div class="d-flex ">
-                <div class="me-5 bg-primary w-50">
-                  <h4 class="text-center mt-3"><strong>Tailwind CSS</strong></h4>
-                  <hr>
-                  <hr>
-                  <p class="ms-3">
-                    1. Tailwind offers predesigned widgets to build a site from scratch with fast UI development.
-                    <br>
+            <!-- Collapsible content of the accordion item.
+                 - `id="collapseTwo"`: Unique ID linking to the button.
+                 - `accordion-collapse collapse`: Defines collapsible functionality.
+                 - `aria-labelledby="headingTwo"`: Associates the collapse section with the header for accessibility.
+                 - `data-bs-parent="#accordionExample"`: Ensures only one section expands at a time within the accordion group. -->
 
-                    <br>
+            <div class="accordion-body">
+              <!-- Container for accordion body content, holding the Bootstrap vs. Tailwind comparison. -->
+
+              <div class="d-flex">
+                <!-- Flexbox container for side-by-side comparison of Bootstrap and Tailwind CSS. - `d-flex`: Enables a flexible row layout for responsiveness. -->
+
+                <!-- Tailwind CSS Comparison Section -->
+                <div class="me-5 bg-primary w-50">
+                  <!-- Tailwind CSS information block.
+                       - `me-5`: Adds right margin for spacing.
+                       - `bg-primary`: Applies Bootstrap's primary color background.
+                       - `w-50`: Restricts width to 50% to balance with Bootstrap section. -->
+
+                  <h4 class="text-center mt-3"><strong>Tailwind CSS</strong></h4>
+                  <!-- Section title for Tailwind CSS.
+                       - `text-center`: Centers the heading.
+                       - `mt-3`: Adds top margin for spacing.
+                       - `<strong>`: Makes the text bold for emphasis. -->
+
+                  <hr>
+                  <hr>
+                  <!-- Horizontal separators for visual distinction. -->
+
+                  <p class="ms-3">
+                    <!-- Tailwind CSS comparison points. - `ms-3`: Adds left margin for structured alignment. -->
+                    1. Tailwind offers predesigned widgets to build a site from scratch with fast UI development.
+                    <br><br>
+
                     2. Tailwind CSS uses a set of utility classes to create a neat UI with more flexibility and
                     uniqueness.
-                    <br>
+                    <br><br>
 
-                    <br>
-                    3. created using Tailwind CSS are much more customizable.
-                    <br>
+                    3. Projects created using Tailwind CSS are much more customizable.
+                    <br><br>
 
-                    <br>
-                    4. Tailwind CSS is relatively newer, and there is still much room to grow in terms of its
-                    community, however, it is growing day by day, and the number of users, references, tools, and
-                    websites related to it are also increasing.
-                    <br>
+                    4. Tailwind CSS is relatively new, and its community is expanding rapidly, with increasing
+                    references, tools, and adoption.
+                    <br><br>
 
-                    <br>
-                    5. Tailwind CSS only needs the base stylesheet file, which amounts up to 27kb making it lighter.
-                    <br>
+                    5. Tailwind CSS requires only its base stylesheet file (~27KB), making it lightweight.
+                    <br><br>
 
-                    <br>
-                    6. Tailwind CSS is used by BlaBlaCar, Exyplis, and Bazzite.
+                    6. Tailwind CSS is used by companies like BlaBlaCar, Exyplis, and Bazzite.
                   </p>
                 </div>
 
+                <!-- Bootstrap Comparison Section -->
                 <div class="ms-5 bg-info w-50">
+                  <!-- Bootstrap information block.
+                       - `ms-5`: Adds left margin for spacing.
+                       - `bg-info`: Uses Bootstrap's info color background.
+                       - `w-50`: Restricts width to 50% to maintain balance. -->
+
                   <h4 class="text-center mt-3"><strong>Bootstrap</strong></h4>
+                  <!-- Section title for Bootstrap.
+                       - `text-center`: Centers the heading.
+                       - `mt-3`: Adds top margin for spacing.
+                       - `<strong>`: Makes the text bold for emphasis. -->
+
                   <hr>
                   <hr>
+                  <!-- Horizontal separators for visual distinction. -->
+
                   <p class="ms-3">
-                    1. Bootstrap comes with a set of pre-styled responsive, mobile-first components that possess a
-                    definite UI kit.
-                    <br>
+                    <!-- Bootstrap comparison points. - `ms-3`: Adds left margin for structured alignment. -->
+                    1. Bootstrap provides pre-styled responsive, mobile-first components within a defined UI kit.
+                    <br><br>
 
-                    <br>
-                    2. Sites created using Bootstrap follow the generic pattern that makes them look identical.
-                    <br>
+                    2. Sites created using Bootstrap often follow generic design patterns, making them look similar.
+                    <br><br>
 
-                    <br>
-                    3. Websites created with Bootstraps are known for their responsiveness and flawless design, but
-                    the looks are generic and similar.
-                    <br>
+                    3. Websites built with Bootstrap are known for their responsiveness and flawless design, but often
+                    lack uniqueness.
+                    <br><br>
 
-                    <br>
-                    4. Bootstrap is efficient and saves a lot of time. It has been around for more than nine years and
-                    being the most popular CSS Framework, it has a large community of developers, forums, tools, and
-                    so on.
-                    <br>
+                    4. Bootstrap is time-efficient and has been the most popular CSS framework for over nine years, with
+                    a large developer community.
+                    <br><br>
 
-                    <br>
-                    5. Bootstrap has four files that are required to include in your project to get the full benefit
-                    of the CSS Framework. The total size of these files is 308.25kb including, jQuery, Popper.js,
-                    Bootstrap JS, and the main Bootstrap CSS file.
-                    <br>
+                    5. Bootstrap requires four files (jQuery, Popper.js, Bootstrap JS, Bootstrap CSS) totaling ~308KB.
+                    <br><br>
 
-                    <br>
-                    6. Spotify, Twitter, and Lyft are some of the famous companies that use Bootstrap.
-
-
+                    6. Large companies like Spotify, Twitter, and Lyft use Bootstrap.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
         <div class="accordion-item">
+          <!-- Defines an individual accordion item for FAQ regarding CSS and the Box Model. - Each item includes a header (`accordion-header`), an interactive button (`accordion-button`), and collapsible content (`accordion-collapse`). -->
+
           <h2 class="accordion-header" id="headingThree">
+            <!-- Accordion header containing the interactive button.
+                 - `<h2>`: Defines section hierarchy for accessibility.
+                 - `id="headingThree"`: Unique ID that connects to the collapsible content for accessibility. -->
+
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <!-- Button to expand/collapse the accordion content.
+                   - `accordion-button collapsed`: Applies Bootstrap's collapsed state by default.
+                   - `type="button"`: Defines the element as a button.
+                   - `data-bs-toggle="collapse"`: Specifies the action to toggle the collapse.
+                   - `data-bs-target="#collapseThree"`: Links the button to the collapsible content.
+                   - `aria-expanded="false"`: Indicates initial state (collapsed) for accessibility.
+                   - `aria-controls="collapseThree"`: Provides accessibility by associating the button with collapsible content. -->
+
               <h4 class="strong"><strong>What Is CSS and Box Model !?</strong></h4>
+              <!-- Accordion title displayed inside the button.
+                   - `<h4>`: Defines a medium heading for readability.
+                   - `<strong>`: Makes the title bold for emphasis. -->
             </button>
           </h2>
+
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
             data-bs-parent="#accordionExample">
+            <!-- Collapsible content of the accordion item.
+                 - `id="collapseThree"`: Unique ID linking to the button.
+                 - `accordion-collapse collapse`: Defines collapsible functionality.
+                 - `aria-labelledby="headingThree"`: Associates the collapse section with the header for accessibility.
+                 - `data-bs-parent="#accordionExample"`: Ensures only one section expands at a time within the accordion group. -->
+
             <div class="accordion-body">
+              <!-- Container for accordion body content, containing information about CSS and the Box Model. -->
+
               <strong>In web development</strong>, the <code>CSS</code> box model refers to how <code>HTML</code>
               elements are modeled in browser engines and how the dimensions of those <code>HTML</code> elements are
-              derived from <code>CSS</code> properties. It is a fundamental concept for the composition of
-              <code>HTML</code> webpages.[3] The guidelines of the box model are described by web standards World Wide
-              Web Consortium (W3C) specifically the <code>CSS</code> Working Group. For much of the late-1990s and
-              early 2000s there had been non-standard compliant implementations of the box model in mainstream
-              browsers. With the advent of <code>CSS2</code> in 1998, which introduced the box-sizing property, the
-              problem had mostly been resolved.
+              derived from <code>CSS</code> properties.
+              <!-- Introductory statement explaining the concept of the CSS Box Model.
+                   - `<strong>`: Highlights "In web development" to emphasize its relevance.
+                   - `<code>`: Formats CSS-related terms for distinction. -->
+
+              It is a fundamental concept for the composition of <code>HTML</code> webpages.
+              <!-- Explains why the Box Model is critical in structuring web pages. -->
+
+              The guidelines of the box model are described by web standards from the World Wide Web Consortium (W3C),
+              specifically the <code>CSS</code> Working Group.
+              <!-- References W3C as the standard-setting organization for web technologies. - `<code>`: Highlights CSS-related terms. -->
+
+              For much of the late-1990s and early 2000s, there were non-standard implementations of the box model
+              in mainstream browsers.
+              <!-- Explains historical inconsistencies across browsers before standardization. -->
+
+              With the advent of <code>CSS2</code> in 1998, which introduced the box-sizing property,
+              the problem was mostly resolved.
+              <!-- Highlights the role of CSS2 and the box-sizing property in fixing inconsistencies across browsers. -->
             </div>
           </div>
         </div>
 
+
         <div class="accordion-item">
+          <!-- Defines an individual accordion item for FAQ regarding semantic tags in HTML. - Each item includes a header (`accordion-header`), an interactive button (`accordion-button`), and collapsible content (`accordion-collapse`). -->
+
           <h2 class="accordion-header" id="headingThree">
+            <!-- Accordion header containing the interactive button.
+                 - `<h2>`: Defines section hierarchy for accessibility.
+                 - `id="headingThree"`: Unique ID that connects to the collapsible content for accessibility. -->
+
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <h4 class="strong"><strong>What Is a Simantic Tag !?</strong></h4>
+              <!-- Button to expand/collapse the accordion content.
+                   - `accordion-button collapsed`: Ensures the section starts in a collapsed state.
+                   - `type="button"`: Defines the element as a button.
+                   - `data-bs-toggle="collapse"`: Specifies the action to toggle the collapsible content.
+                   - `data-bs-target="#collapseThree"`: Connects the button to its collapsible content.
+                   - `aria-expanded="false"`: Indicates the default state (collapsed) for accessibility.
+                   - `aria-controls="collapseThree"`: Provides accessibility by associating the button with collapsible content. -->
+
+              <h4 class="strong"><strong>What Is a Semantic Tag !?</strong></h4>
+              <!-- Accordion title displayed inside the button.
+                   - `<h4>`: Defines a medium heading for readability.
+                   - `<strong>`: Makes the title bold for emphasis. -->
             </button>
           </h2>
+
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
             data-bs-parent="#accordionExample">
+            <!-- Collapsible content of the accordion item.
+                 - `id="collapseThree"`: Unique ID linking to the button.
+                 - `accordion-collapse collapse`: Defines collapsible behavior.
+                 - `aria-labelledby="headingThree"`: Associates the collapse section with the header for accessibility.
+                 - `data-bs-parent="#accordionExample"`: Ensures only one section expands at a time within the accordion group. -->
+
             <div class="accordion-body">
-              <strong>
-                <code>HTML</code> was originally created as a markup language to describe documents on the early
-                internet. As the
-                internet grew and was adopted by more people, its needs changed.</strong>
+              <!-- Container for accordion body content, explaining semantic tags. -->
+
+              <strong><code>HTML</code> was originally created as a markup language to describe documents on the early
+                internet.
+                As the internet grew and was adopted by more people, its needs changed.</strong>
+              <!-- Introduces the historical purpose of HTML.
+                   - `<strong>`: Emphasizes the importance of HTML.
+                   - `<code>`: Highlights "HTML" as programming terminology. -->
+
               <br><br>
-              Where the internet was originally intended for sharing scientific documents, now people wanted to share
-              other things as well. Very quickly, people started wanting to make the web look nicer.
+
+              Where the internet was originally intended for sharing scientific documents, people soon wanted to share
+              other types of content and enhance the visual presentation of web pages.
+              <!-- Explains how web usage evolved from scientific documents to broader applications. -->
+
               <br><br>
-              Because the web was not initially built to be designed, programmers used different hacks to get things
-              laid out in different ways. Rather than using the <code> table</code> to describe information using a
-              table,
-              programmers would use them to position other elements on a page.
+
+              Because the web was not initially built for advanced design, programmers used various workarounds to
+              structure
+              content visually. Instead of using <code>table</code> elements solely for tabular data, developers
+              repurposed
+              them to control the layout of web pages.
+              <!-- Describes early web design challenges and non-standard practices. - `<code>`: Highlights "table" as an HTML tag. -->
+
               <br><br>
-              As the use of visually designed layouts progressed, programmers started to use a generic “non-semantic”
-              tag like <code>div</code>. They would often give these elements a class or id attribute to describe
-              their purpose.
-              For example, instead of <code>header</code> this was often written as <code>div class="header" </code>.
+
+              As visually designed layouts became more common, developers frequently relied on generic “non-semantic”
+              tags
+              like <code>div</code>. These elements were often given class or ID attributes to describe their intended
+              purpose.
+              For example, instead of using <code>header</code>, it was common to write <code>div class="header"</code>.
+              <!-- Discusses the rise of non-semantic elements in web development. - `<code>`: Highlights "div" and "header" as HTML tags. -->
+
               <br><br>
-              As <code>HTML5</code> is still relatively new, this use of non-semantic elements is still very common on
-              websites today.
+
+              With the introduction of <code>HTML5</code>, semantic tags such as `<header>`, `<article>`, `<section>`,
+                    and `<footer>`
+                      became available to better define content structure. However, despite these advancements, the use
+                      of non-semantic
+                      elements remains widespread today.
+                      <!-- Explains the improvement introduced by HTML5 semantic elements. - `<code>`: Highlights "HTML5" and semantic tags. -->
             </div>
           </div>
+
         </div>
+
       </div>
+
     </section>
+
     <br>
     <br>
-    <section class="container d-none d-lg-block ">
+
+    <section class="container d-none d-lg-block">
+      <!-- This section container providing a structured and responsive layout.
+           - `container`: Ensures the section scales properly across different screen sizes.
+           - `d-none d-lg-block`: Hides the section on smaller screens (`d-none`) and displays it only on large screens (`d-lg-block`). -->
+
       <h1><strong>Trusted by over 800+ companies</strong></h1>
+      <!-- Section heading highlighting credibility and trust.
+           - `<h1>`: Defines a large heading for emphasis.
+           - `<strong>`: Makes the text bold to enhance visibility. -->
+
       <br><br>
+      <!-- Adds extra vertical spacing between heading and company logos for improved readability. -->
+
       <div class="row d-flex align-items-center justify-content-between">
-        <div class="col-2 img-fluid"><img src="Project-Design-&-Image/images/company/company-3.png" class="ms-5" alt="">
+        <!-- Bootstrap row class organizing company logos into a structured layout.
+             - `d-flex`: Enables flexible row layout for responsiveness.
+             - `align-items-center`: Vertically centers all images within the row.
+             - `justify-content-between`: Ensures maximum spacing between elements for an evenly distributed look. -->
+
+        <!-- INDIVIDUAL COMPANY LOGOS (6 columns in the row) -->
+
+        <div class="col-2 img-fluid">
+          <!-- Column occupying approximately 1/6th of the row width (`col-2`). Ensures logos are evenly distributed. -->
+          <img src="Project-Design-&-Image/images/company/company-3.png" class="ms-5" alt="Company 3 Logo">
+          <!-- Company logo:
+               - `ms-5`: Adds left margin for spacing.
+               - `alt="Company 3 Logo"`: Provides accessibility text to describe the image. -->
         </div>
-        <div class="col-2 img-fluid"><img src="Project-Design-&-Image/images/company/company-1.png" class="me-5" alt="">
+
+        <div class="col-2 img-fluid">
+          <!-- Defines a column taking up 2 out of 12 Bootstrap grid columns (`col-2`), ensuring equal distribution of logos in a structured layout.          - `img-fluid`: Makes the image responsive to different screen sizes. -->
+
+          <img src="Project-Design-&-Image/images/company/company-1.png" class="me-5" alt="Company 1 Logo">
+          <!-- Company logo:
+               - `me-5`: Adds right margin to create spacing from neighboring elements.
+               - `alt="Company 1 Logo"`: Provides accessibility text for screen readers. -->
         </div>
-        <div class="col-2 img-fluid"><img src="Project-Design-&-Image/images/company/company-2.png" class="ms-3" alt="">
+
+        <div class="col-2 img-fluid">
+          <img src="Project-Design-&-Image/images/company/company-2.png" class="ms-3" alt="Company 2 Logo">
+          <!-- Company logo:
+               - `ms-3`: Adds left margin for slight spacing.
+               - `alt="Company 2 Logo"`: Improves accessibility. -->
         </div>
-        <div class="col-2 img-fluid"><img src="Project-Design-&-Image/images/company/company-6.png" alt=""></div>
-        <div class="col-2 img-fluid"><img src="Project-Design-&-Image/images/company/company-5.png" alt=""></div>
-        <div class="col-2 img-fluid"><img src="Project-Design-&-Image/images/company/company-4.png" alt=""></div>
+
+        <div class="col-2 img-fluid">
+          <img src="Project-Design-&-Image/images/company/company-6.png" alt="Company 6 Logo">
+          <!-- Company logo without extra margin adjustments, ensuring consistent placement within the grid layout. - `alt="Company 6 Logo"`: Accessibility text. -->
+        </div>
+
+        <div class="col-2 img-fluid">
+          <img src="Project-Design-&-Image/images/company/company-5.png" alt="Company 5 Logo">
+          <!-- Company logo structured similarly for uniform alignment. - `alt="Company 5 Logo"`: Alternative text for screen readers. -->
+        </div>
+
+        <div class="col-2 img-fluid">
+          <img src="Project-Design-&-Image/images/company/company-4.png" alt="Company 4 Logo">
+          <!-- Company logo maintaining the same styling conventions. - `alt="Company 4 Logo"`: Accessibility support for better usability. -->
+        </div>
+
       </div>
+
     </section>
+
     <br>
     <br>
 
   </main>
 
   <footer class="bg-dark d-flex align-items-center justify-content-center" style="height: 50vh;">
+    <!-- Footer section providing contact details and legal information.
+       - `bg-dark`: Applies a dark background color for better contrast.
+       - `d-flex`: Enables a flexible layout using CSS Flexbox.
+       - `align-items-center`: Vertically centers the content within the footer.
+       - `justify-content-center`: Horizontally centers the content.
+       - `style="height: 50vh;"`: Defines the footer height as 50% of the viewport height (`vh`). -->
+
     <center>
+      <!-- Centers the content horizontally for a balanced layout. -->
+
       <section class="container">
+        <!-- Section container ensuring proper padding and responsiveness. - `container`: Bootstrap utility providing structured alignment. -->
+
         <h1 class="text-white"><strong>Pro Edu</strong></h1>
-        <p class="text-white"><strong>Office 41, Zawaya Buildin, Ghala Muscat, </strong></p>
+        <!-- Footer heading displaying the company name.
+             - `<h1>`: Defines the largest heading for emphasis.
+             - `text-white`: Ensures text is white for contrast against the dark background.
+             - `<strong>`: Makes the text bold for better readability. -->
+
+        <p class="text-white"><strong>Office 41, Zawaya Building, Ghala Muscat,</strong></p>
+        <!-- Physical office address of the company.
+             - `<p>`: Defines a paragraph for structured text.
+             - `text-white`: Ensures readability against the dark background.
+             - `<strong>`: Highlights the text for better visibility. -->
+
         <p class="text-white"><strong>Sultanate of Oman</strong></p>
-        <p class="text-white"><strong>Privacy Ploicy | Terms of use</strong></p>
+        <!-- Location specifying the country. - Uses the same formatting as the previous paragraph for consistency. -->
+
+        <p class="text-white"><strong>Privacy Policy | Terms of Use</strong></p>
+        <!-- Legal links providing access to company policies.
+             - `<p>`: Defines a paragraph for readability.
+             - `text-white`: Maintains visibility against the dark background.
+             - `<strong>`: Ensures bold formatting. -->
+
       </section>
+
     </center>
+
   </footer>
 
 </body>
